@@ -1,0 +1,51 @@
+1. What is Wget Command?
+Wget is the non-interactive network downloader which is used to download files from the server even when the user has not logged on to the system and it can work in the background without hindering the current process.
+
+2. How to Install Wget?
+open your server via SSH
+
+apt-get install wget
+
+3. Wget Command Example
+a. Using Wget Command to Download Single Files
+
+wget https://seedorchard.net/latest.zip
+
+In the example, a file named latest.zip will be downloaded in the current working directory. You'll also see additional information, such as download progress, speed, size, time, and date.
+
+b. Using Wget Command to Download Multiple Files
+
+nano curl.txt
+
+This command serves to create an allfiles.txt file and open the text editor interface software. Then write the following link:
+
+https://client.seedorchard.net/projects/ipb_lppm.zip
+https://seedorchard.net/latest.zip
+
+Using -i to save all your files
+wget -i curl.txt
+
+c. Using the Wget Command to save a file with a different name
+
+wget -O web-backup.zip https://seedorchard.net/latest.zip
+
+d. Using Wget Command to save files in a directory
+
+wget -P documents/backup/ https://seedorchard.net/latest.zip
+
+e. Using Wget Command to download in the background
+
+wget -b http://seedorchard.net/syslog.tar.gz
+
+f. Using Wget Command to download via FTP
+
+wget --ftp-user=USERNAME --ftp-password=PASSWORD ftp://seedorchard.net/client.json
+
+4. Options : 
+a. -v / –version : This is used to display the version of the wget available on your system. 
+
+$wget -v
+
+b. -h / –help : This is used to print a help message displaying all the possible options of the line command that is available with the wget command line options 
+
+$wget -h [URL]
