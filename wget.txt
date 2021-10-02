@@ -44,8 +44,8 @@ wget --ftp-user=USERNAME --ftp-password=PASSWORD ftp://seedorchard.net/client.js
 4. Options : 
 a. -v / –version : This is used to display the version of the wget available on your system. 
 
-$wget -v
+wget -v
 
 b. -h / –help : This is used to print a help message displaying all the possible options of the line command that is available with the wget command line options 
 
-$wget -h [URL]
+wget -h [URL]
